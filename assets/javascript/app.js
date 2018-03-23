@@ -30,6 +30,28 @@ $.ajax({
     console.log(headline);
     console.log(byLine);
     console.log(pubDate);
+    var articleDiv = $("<div>");
+
+    var number = $("<div>" + (i+1) + "</div>");
+    articleDiv.append(number);
+
+    var title = $("<h1>");
+    title.text(headline);
+    articleDiv.append(title);
+
+    var author = $("<p>");
+    author.text(byLine);
+    articleDiv.append(author);
+
+    var date = $("<p>");
+    date.text(pubDate);
+    articleDiv.append(date);
+
+    var link = $("<a>");
+    link.text(webUrl);
+    link.attr("href", webUrl);
+    articleDiv.append(link);
+    $("#top-articles").append(articleDiv);
   }
 }).fail(function(err) {
   throw err;
