@@ -12,7 +12,7 @@ $("submit-search").on("click", function(){
   endYear = $("#end-year").val();
 });
 $("#clear-results").on("click",function(){
-  
+  $("#top-articles").empty();
 })
 
 url += '?' + "api-key=" + apiKey + "&q=" + searchTerm + "&fl=web_url, headline, byline, pub_date";
