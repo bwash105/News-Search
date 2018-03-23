@@ -1,3 +1,47 @@
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    height: 100vh;
+    z-index: -100;
+}
+
 .jumbotron {
-    background-color: aquamarine;
+    background-color: rgb(9, 199, 158);
+}
+
+#submit-search {
+    background: rgb(9, 199, 158);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    transition-duration: .5s;
+
+}
+
+#submit-search:hover {
+    background: white;
+    border: 1px solid rgb(9, 199, 158);
+    color: black;
+    cursor: pointer;
+}
+
+#clear-results {
+    background: rgb(9, 199, 158);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    transition-duration: .5s;
+
+}
+
+#clear-results:hover {
+    background: white;
+    border: 1px solid rgb(9, 199, 158);
+    color: black;
+    cursor: pointer;
 }
