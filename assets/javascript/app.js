@@ -1,9 +1,20 @@
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 var apiKey = "bb134ec959784cc58e11ecfeb4e61900";
-var searchTerm = "China";
-var numberRecords = 5;
-var startYear = '';
-var endYear = '';
+
+var searchTerm;
+var numberRecords;
+var startYear;
+var endYear;
+$("submit-search").on("click", function(){
+  searchTerm = $("#search").val();
+  numberRecords = $("#records").val();
+  startYear = $("#start-year").val();
+  endYear = $("#end-year").val();
+});
+$("#clear-results").on("click",function(){
+  
+})
+
 url += '?' + "api-key=" + apiKey + "&q=" + searchTerm + "&fl=web_url, headline, byline, pub_date";
 if (startYear !== ""){
   url += "&begin_date"+startYear+"0101";
