@@ -51,6 +51,7 @@ $.ajax({
     link.text(webUrl);
     link.attr("href", webUrl);
     articleDiv.append(link);
+    $("#top-articles").append(articleDiv);
   }
 }).fail(function(err) {
   throw err;
