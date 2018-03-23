@@ -4,11 +4,83 @@
 <head>
     <title>New York Times Search</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><span class="glyphicon glyphicon-tint" id="sizing-addon1"></span>New York Times Search</h1>
+            
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search Parameters</h3>
+            </div>
+            <div class="panel-body">
+
+                <div>
+                    <h6>Search Term:</h6>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">@</span>
+                    <input type="text" class="form-control" placeholder="news news news" aria-describedby="sizing-addon2" id="search">
+                </div>
+
+                <div>
+                    <h6>Number of Records to Retrieve:</h6>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">@</span>
+                    <input type="text" class="form-control" placeholder="10" aria-describedby="sizing-addon2" id="records">
+                </div>
+
+                <div>
+                    <h6>Start Year (Optional):</h6>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">@</span>
+                    <input type="text" class="form-control" placeholder="2000" aria-describedby="sizing-addon2" id="start-year">
+                </div>
+
+                <div>
+                    <h6>End Year (Optional):</h6>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">@</span>
+                    <input type="text" class="form-control" placeholder="2004" aria-describedby="sizing-addon2" id="end-year">
+                </div>
+                <br>
+                <button class="search-button" id="submit-search">Search</button>
+                <button class="clear-button" id="clear-results">Clear Results</button>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Top Articles</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+
     <script src="assets/javascript/app.js"></script>
 </body>
 
